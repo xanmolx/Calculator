@@ -13,8 +13,20 @@ public class calculator extends javax.swing.JFrame {
     /**
      * Creates new form calculator
      */
+    //Variables
+    double plusminus;
+    double firstDouble;
+    double secondDouble;
+    double totalDouble;
+    // to check for button clicks
+     int plusClick;
+     int minusClick;
+     int multiplyClick;
+     int divideClick;
+     
     public calculator() {
         initComponents();
+        this.setSize(400, 550);
     }
 
     /**
@@ -26,7 +38,7 @@ public class calculator extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
+        display = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -49,8 +61,8 @@ public class calculator extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(0, 0, 373, 70);
+        getContentPane().add(display);
+        display.setBounds(0, 0, 373, 70);
 
         jButton1.setText("2");
         getContentPane().add(jButton1);
@@ -77,6 +89,11 @@ public class calculator extends javax.swing.JFrame {
         jButton6.setBounds(95, 167, 88, 68);
 
         jButton7.setText("C");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton7);
         jButton7.setBounds(95, 317, 88, 68);
 
@@ -140,6 +157,10 @@ public class calculator extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+       display.setText("");
+    }//GEN-LAST:event_jButton7ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -176,6 +197,7 @@ public class calculator extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField display;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -195,6 +217,5 @@ public class calculator extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
