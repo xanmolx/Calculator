@@ -26,21 +26,119 @@ public class calculator extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(0, 0, 373, 70);
+
+        jButton1.setText("2");
+        getContentPane().add(jButton1);
+        jButton1.setBounds(95, 89, 88, 68);
+
+        jButton2.setText("3");
+        getContentPane().add(jButton2);
+        jButton2.setBounds(190, 89, 88, 68);
+
+        jButton3.setText("1");
+        getContentPane().add(jButton3);
+        jButton3.setBounds(0, 89, 88, 68);
+
+        jButton4.setText("0");
+        getContentPane().add(jButton4);
+        jButton4.setBounds(0, 317, 88, 68);
+
+        jButton5.setText("4");
+        getContentPane().add(jButton5);
+        jButton5.setBounds(0, 167, 88, 68);
+
+        jButton6.setText("5");
+        getContentPane().add(jButton6);
+        jButton6.setBounds(95, 167, 88, 68);
+
+        jButton7.setText("C");
+        getContentPane().add(jButton7);
+        jButton7.setBounds(95, 317, 88, 68);
+
+        jButton8.setText("9");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton8);
+        jButton8.setBounds(190, 242, 88, 68);
+
+        jButton9.setText("jButton1");
+        getContentPane().add(jButton9);
+        jButton9.setBounds(0, 167, 88, 68);
+
+        jButton10.setText("6");
+        getContentPane().add(jButton10);
+        jButton10.setBounds(190, 167, 88, 68);
+
+        jButton11.setText("7");
+        getContentPane().add(jButton11);
+        jButton11.setBounds(0, 242, 88, 68);
+
+        jButton12.setText(".");
+        getContentPane().add(jButton12);
+        jButton12.setBounds(190, 317, 88, 68);
+
+        jButton13.setText("+");
+        getContentPane().add(jButton13);
+        jButton13.setBounds(285, 89, 88, 68);
+
+        jButton14.setText("-");
+        getContentPane().add(jButton14);
+        jButton14.setBounds(285, 167, 88, 68);
+
+        jButton15.setText("X");
+        getContentPane().add(jButton15);
+        jButton15.setBounds(285, 242, 88, 68);
+
+        jButton16.setText("/");
+        getContentPane().add(jButton16);
+        jButton16.setBounds(285, 317, 88, 68);
+
+        jButton17.setText("+/-");
+        getContentPane().add(jButton17);
+        jButton17.setBounds(0, 392, 183, 68);
+
+        jButton18.setText("=");
+        getContentPane().add(jButton18);
+        jButton18.setBounds(190, 392, 183, 68);
+
+        jButton19.setText("8");
+        getContentPane().add(jButton19);
+        jButton19.setBounds(95, 242, 88, 68);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +176,25 @@ public class calculator extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
