@@ -19,11 +19,11 @@ public class calculator extends javax.swing.JFrame {
     double secondDouble;
     double totalDouble;
     // to check for button clicks
-     int plusClick;
-     int minusClick;
-     int multiplyClick;
-     int divideClick;
-     
+    int plusClick;
+    int minusClick;
+    int multiplyClick;
+    int divideClick;
+
     public calculator() {
         initComponents();
         this.setSize(400, 550);
@@ -58,36 +58,87 @@ public class calculator extends javax.swing.JFrame {
         jButton17 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
         jButton19 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().setLayout(null);
-        getContentPane().add(display);
-        display.setBounds(0, 0, 373, 70);
 
+        display.setEditable(false);
+        display.setBackground(new java.awt.Color(0, 0, 0));
+        display.setForeground(new java.awt.Color(255, 255, 255));
+        display.setSelectionColor(new java.awt.Color(0, 0, 0));
+        getContentPane().add(display);
+        display.setBounds(0, 10, 370, 70);
+
+        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("2");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1);
         jButton1.setBounds(95, 89, 88, 68);
 
+        jButton2.setBackground(new java.awt.Color(0, 0, 0));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("3");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2);
         jButton2.setBounds(190, 89, 88, 68);
 
+        jButton3.setBackground(new java.awt.Color(0, 0, 0));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("1");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3);
         jButton3.setBounds(0, 89, 88, 68);
 
+        jButton4.setBackground(new java.awt.Color(0, 0, 0));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("0");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton4);
         jButton4.setBounds(0, 317, 88, 68);
 
+        jButton5.setBackground(new java.awt.Color(0, 0, 0));
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("4");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton5);
         jButton5.setBounds(0, 167, 88, 68);
 
+        jButton6.setBackground(new java.awt.Color(0, 0, 0));
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setText("5");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton6);
         jButton6.setBounds(95, 167, 88, 68);
 
+        jButton7.setBackground(new java.awt.Color(0, 0, 0));
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
         jButton7.setText("C");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,6 +148,8 @@ public class calculator extends javax.swing.JFrame {
         getContentPane().add(jButton7);
         jButton7.setBounds(95, 317, 88, 68);
 
+        jButton8.setBackground(new java.awt.Color(0, 0, 0));
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setText("9");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,56 +163,244 @@ public class calculator extends javax.swing.JFrame {
         getContentPane().add(jButton9);
         jButton9.setBounds(0, 167, 88, 68);
 
+        jButton10.setBackground(new java.awt.Color(0, 0, 0));
+        jButton10.setForeground(new java.awt.Color(255, 255, 255));
         jButton10.setText("6");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton10);
         jButton10.setBounds(190, 167, 88, 68);
 
+        jButton11.setBackground(new java.awt.Color(0, 0, 0));
+        jButton11.setForeground(new java.awt.Color(255, 255, 255));
         jButton11.setText("7");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton11);
         jButton11.setBounds(0, 242, 88, 68);
 
+        jButton12.setBackground(new java.awt.Color(0, 0, 0));
+        jButton12.setForeground(new java.awt.Color(255, 255, 255));
         jButton12.setText(".");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton12);
         jButton12.setBounds(190, 317, 88, 68);
 
+        jButton13.setBackground(new java.awt.Color(255, 204, 0));
         jButton13.setText("+");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton13);
         jButton13.setBounds(285, 89, 88, 68);
 
+        jButton14.setBackground(new java.awt.Color(255, 204, 0));
         jButton14.setText("-");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton14);
         jButton14.setBounds(285, 167, 88, 68);
 
+        jButton15.setBackground(new java.awt.Color(255, 204, 0));
         jButton15.setText("X");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton15);
         jButton15.setBounds(285, 242, 88, 68);
 
+        jButton16.setBackground(new java.awt.Color(255, 204, 0));
         jButton16.setText("/");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton16);
         jButton16.setBounds(285, 317, 88, 68);
 
+        jButton17.setBackground(new java.awt.Color(255, 204, 0));
         jButton17.setText("+/-");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton17);
         jButton17.setBounds(0, 392, 183, 68);
 
+        jButton18.setBackground(new java.awt.Color(255, 204, 0));
         jButton18.setText("=");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton18);
         jButton18.setBounds(190, 392, 183, 68);
 
+        jButton19.setBackground(new java.awt.Color(0, 0, 0));
+        jButton19.setForeground(new java.awt.Color(255, 255, 255));
         jButton19.setText("8");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton19);
         jButton19.setBounds(95, 242, 88, 68);
+
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 380, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 500, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 380, 500);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
+        display.setText(display.getText() + jButton8.getText());
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-       display.setText("");
+        display.setText("");
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        display.setText(display.getText() + jButton3.getText());
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        display.setText(display.getText() + jButton1.getText());
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        display.setText(display.getText() + jButton2.getText());
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        display.setText(display.getText() + jButton5.getText());
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        display.setText(display.getText() + jButton6.getText());
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        display.setText(display.getText() + jButton10.getText());
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        display.setText(display.getText() + jButton11.getText());
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        display.setText(display.getText() + jButton19.getText());
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        display.setText(display.getText() + jButton4.getText());
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        display.setText(display.getText() + jButton12.getText());
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        plusminus = (Double.parseDouble(String.valueOf(display.getText())));
+        plusminus = plusminus * (-1);
+        display.setText(String.valueOf(plusminus));
+
+
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        firstDouble = (Double.parseDouble(String.valueOf(display.getText())));
+        display.setText("");
+        plusClick = 1;
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        firstDouble = (Double.parseDouble(String.valueOf(display.getText())));
+        display.setText("");
+        minusClick = 1;
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        firstDouble = (Double.parseDouble(String.valueOf(display.getText())));
+        display.setText("");
+        multiplyClick = 1;
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        firstDouble = (Double.parseDouble(String.valueOf(display.getText())));
+        display.setText("");
+        divideClick = 1;
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+      secondDouble = (Double.parseDouble(String.valueOf(display.getText())));
+      if(plusClick>0)
+      {
+          totalDouble = firstDouble+secondDouble;
+          display.setText((String.valueOf(totalDouble)));
+          firstDouble = 0;
+          secondDouble = 0;
+          plusClick = 0;
+      }
+      else if(minusClick>0)
+      {
+          totalDouble = firstDouble-secondDouble;
+          display.setText((String.valueOf(totalDouble)));
+          firstDouble = 0;
+          secondDouble = 0;
+          plusClick = 0;
+      }
+      else if(multiplyClick>0)
+      {
+          totalDouble = firstDouble*secondDouble;
+          display.setText((String.valueOf(totalDouble)));
+          firstDouble = 0;
+          secondDouble = 0;
+          plusClick = 0;
+      }
+      else if(divideClick>0)
+      {
+          totalDouble = firstDouble/secondDouble;
+          display.setText((String.valueOf(totalDouble)));
+          firstDouble = 0;
+          secondDouble = 0;
+          plusClick = 0;
+      }
+    }//GEN-LAST:event_jButton18ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -217,5 +458,6 @@ public class calculator extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
